@@ -1,0 +1,74 @@
+[project]
+site_name = "Wiki FD"
+site_description = "A demo wiki skeleton built with Zensical"
+site_url = "https://example.com/wiki-fd/"
+
+nav = [
+  { "Home" = "index.md" },
+  { "Articles" = [
+    { "Lorem Ipsum" = "examples/lorem-ipsum.md" },
+    { "Dolor Sit Amet" = "examples/dolor-sit-amet.md" },
+    { "Consectetur Adipiscing" = "examples/consectetur-adipiscing.md" },
+  ] },
+]
+
+extra_javascript = [
+  "javascripts/mathjax.js",
+  "https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js",
+  "https://cdn.plot.ly/plotly-2.35.2.min.js",
+  "javascripts/charts.js",
+]
+
+[project.theme]
+language = "en"
+
+features = [
+  "content.code.copy",
+  "content.code.annotate",
+  "navigation.indexes",
+  "navigation.top",
+  "navigation.footer",
+  "search.highlight",
+]
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme)"
+toggle.icon = "lucide/sun-moon"
+toggle.name = "Switch to light mode"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: light)"
+scheme = "default"
+primary = "indigo"
+accent = "indigo"
+toggle.icon = "lucide/sun"
+toggle.name = "Switch to dark mode"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: dark)"
+scheme = "slate"
+primary = "indigo"
+accent = "indigo"
+toggle.icon = "lucide/moon-star"
+toggle.name = "Switch to system preference"
+
+# LaTeX formulas, rendered client-side by MathJax (see docs/javascripts/mathjax.js).
+[project.markdown_extensions.pymdownx.arithmatex]
+generic = true
+
+# Syntax-highlighted code blocks.
+[project.markdown_extensions.pymdownx.highlight]
+anchor_linenums = true
+line_spans = "__span"
+pygments_lang_class = true
+
+[project.markdown_extensions.pymdownx.inlinehilite]
+
+[project.markdown_extensions.pymdownx.superfences]
+
+[project.markdown_extensions.admonition]
+
+[project.markdown_extensions.footnotes]
+
+[project.markdown_extensions.toc]
+permalink = true
