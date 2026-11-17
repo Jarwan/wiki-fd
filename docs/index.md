@@ -12,7 +12,8 @@ integration, links to related articles, and a list of sources.
 
 ## Articles
 
-
+- [Gauss equations](articles/gauss_equations.md)
+- [Local orbital frames](articles/local_orbital_frames.md)
 
 ## Examples
 
@@ -23,4 +24,3 @@ integration, links to related articles, and a list of sources.
 ## Sources
 
 - [Zensical documentation](https://zensical.org/docs/)
-- [Lorem Ipsum generator](https://www.lipsum.com/)
